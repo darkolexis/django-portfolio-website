@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    background: silver;
+    background: #212529;
 }
 #loading{
     width: 200px;
@@ -38,7 +38,6 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    /* background: #fff; */
     border-radius: 50%;
 }
 #loading span{
