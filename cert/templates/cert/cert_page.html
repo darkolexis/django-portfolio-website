@@ -1,0 +1,114 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block corecss %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'cert/css/cert_styles.css' %}">
+{% endblock corecss %}
+
+
+{% block content %}
+
+<header>
+  <div class="heading">
+    <h1>Certificates :</h1>
+    <hr>
+  </div>
+</header>
+
+<section class="projects" id="projects">
+
+  <div class="project-wrapper row">
+
+    <!-- 1. Django -->
+    <div class="col-md-8 col-sm-12 offset-md-2">
+      <a href="https://premium.mysirg.com/learn/certificate/4731320-37672" target="_blank">
+        <div class="cards-container">
+          <div class="card-background">
+            <img src="{% static 'cert/images/django_cert.jpg' %}" alt="Image" class="img-fluid" />
+          </div>
+          <div class="card-desc">
+            <h6>Course</h6>
+            <h4>DJANGO</h4>
+            <p>
+              Python for Web using Django - MySirG.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 2. Python HR -->
+    <div class="col-md-8 col-sm-12 offset-md-2 mt-3">
+      <a href="https://www.hackerrank.com/certificates/d367243a7942" target="_blank">
+        <div class="cards-container">
+          <div class="card-background">
+            <img src="{% static 'cert/images/python_hr_cert.png' %}" alt="Image" class="img-fluid" />
+          </div>
+          <div class="card-desc">
+            <h6>Course</h6>
+            <h4>Python</h4>
+            <p>Python (Basic) certificate - HackerRank</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3. Python mysirg -->
+    <div class="col-md-8 col-sm-12 offset-md-2 mt-3">
+      <a href="https://premium.mysirg.com/learn/certificate/4731320-22016" target="_blank">
+        <div class="cards-container">
+          <div class="card-background">
+            <img src="{% static 'cert/images/python_mysirg_cert.png' %}" alt="Image" class="img-fluid" />
+          </div>
+          <div class="card-desc">
+            <h6>Course</h6>
+            <h4>Python</h4>
+            <p>Python Core - MySirG</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4. GPCSSI -->
+    <div class="col-md-8 col-sm-12 offset-md-2 mt-3">
+      <a href="{% static 'cert/images/gpcssi_cert.jpg' %}" target="_blank">
+        <div class="cards-container">
+          <div class="card-background">
+            <img src="{% static 'cert/images/gpcssi_cert.jpg' %}" alt="Image" class="img-fluid" />
+          </div>
+          <div class="card-desc">
+            <h6>Internship</h6>
+            <h4>GPCSSI</h4>
+            <p>Gurugram Police Cyber Security Summer Internship, 2021</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 5. ISCP -->
+    <div class="col-md-8 col-sm-12 offset-md-2 mt-3">
+      <a href="{% static 'cert/images/iscp_cert.jpg' %}" target="_blank">
+        <div class="cards-container">
+          <div class="card-background">
+            <img src="{% static 'cert/images/iscp_cert.jpg' %}" alt="Image" class="img-fluid" />
+          </div>
+          <div class="card-desc">
+            <h6>Training</h6>
+            <h4>ISCP</h4>
+            <p>
+              Information Security Certified Professional - Kratikal Academy
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<hr style="margin: 50px 0;">
+
+{% endblock content %}

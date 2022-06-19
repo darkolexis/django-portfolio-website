@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block corecss %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'core/css/contact.css' %}">
+{% endblock corecss %}
+
+{% block content %}
+
+<header>
+  <div class="heading">
+    <h1>Contact Me :</h1>
+    <hr>
+  </div>
+</header>
+
+<section>
+  <!-- Flexbox Container 1 -->
+  <div class="contact-info">
+
+    <!-- Email -->
+    <a href="mailto:debanjanwork21@gmail.com">
+      <div class="info-box" id="email">
+        <!-- <h2>Email:</h2> -->
+        <div class="contact-icon">
+          <i class="fa-regular fa-envelope fa-2xl"></i>
+        </div>
+        <h4>debanjanwork21@gmail.com</h4>
+      </div>
+    </a>
+
+    <!-- Contact No. -->
+    <a href="https://goo.gl/maps/LCMS1693g38wVZ5f7" target="_blank">
+      <div class="info-box" id="contact-no">
+        <!-- <h2>Address:</h2> -->
+        <div class="contact-icon">
+          <i class="fa fa-map-marked-alt fa-2xl"></i>
+        </div>
+        <h4>Durgapur, West Bengal, India</h4>
+      </div>
+    </a>
+
+  </div>
+
+  <header>
+    <h1>My Social Media Handles :</h1>
+    <hr>
+  </header>
+  <!-- Flexbox Container 2 -->
+  <div class="social-media-handles" data-aos="zoom-in" data-aos-duration="2000">
+
+    <div class="handle">
+      <a href="https://m.facebook.com/HurricaneBB50" target="_blank" class="icon icon-facebook">
+        <i class="ri-facebook-box-line"></i>
+      </a>
+    </div>
+
+    <div class="handle">
+      <a href="https://www.instagram.com/the_arcturians/" target="_blank" class="icon icon-instagram">
+        <i class="ri-instagram-line"></i>
+      </a>
+    </div>
+
+    <div class="handle">
+      <a href="https://twitter.com/darkolexis" target="_blank" class="icon icon-twitter">
+        <i class="ri-twitter-line"></i>
+      </a>
+    </div>
+
+    <div class="handle">
+      <a href="https://www.linkedin.com/in/debanjan-sarkar-2001/" target="_blank" class="icon icon-linkedin">
+        <i class="ri-linkedin-line"></i>
+      </a>
+    </div>
+
+    <div class="handle">
+      <a href="https://github.com/DebanjanSarkar" target="_blank" class="icon icon-github">
+        <i class="ri-github-line"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Debanjan Sarkar" >
+  <meta name="description" content="Personal Portfolio page of Debanjan Sarkar, made using Django, HTML and CSS, which is responsive, and conatains multiple pages, where each page contains specific information, and a vertical navigation bar to navigate through all the pages." />
+  <meta name="keywords" content="portfolio, CV, resume, Debanjan Sarkar, darkolexis, debanjan sarkar portfolio, personal portfolio, responsive, django, portfolio with django, python website" >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Dancing+Script&family=Sansita+Swashed&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Animate On Scroll CSS - ref: https://michalsnik.github.io/aos/ -->
+  <link rel="stylesheet" type="text/css" href="{% static 'animate_on_scroll/css/aos.css' %}">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
+
+  <!-- Remixicon CSS -->
+  <!-- <link href="{% static 'remixicon/css/ri.css' %}" rel="stylesheet" > -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Preloader CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'core/css/preloader.css' %}">
+
+  {% block corecss %}
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/core.css' %}">
+  {% endblock corecss %}
+
+  <!-- Favicon -->
+  {% block favicon %}
+    <link rel="icon" type="image/png" href="{% static 'favicon/cv2-96.png' %}" />
+  {% endblock favicon %}
+
+  {% block page_title %}
+    <title>Portfolio - Debanjan Sarkar</title>
+  {% endblock page_title %}
+
+  <!-- Bootloader Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+  <script>
+    window.onload = function(){
+        document.getElementById("preloader").style.display = "none";
+        document.getElementById("main").style.display = "block";
+    }
+    $(window).load(function(){
+        $('#loading').fadeOut();
+        $('#loading-img').delay(150).fadeOut('slow');
+    }),10000;
+  </script>
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="loading">
+      <span id="loading-img"></span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container-fluid bg-dark" id="main">
+    <div class="row">
+      <div class="col-sm-3" id="nav-pane">
+        {% include 'core/sidebar.html' %}
+      </div>
+      <div class="col-sm-9 offset-sm-3">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
+  </div>
+
+<!-- Fontawesome Javascript -->
+<script src="{% static 'fontawesome/js/all.js' %}"></script>
+
+<!-- Bootstrap JQuery, Popper and Javascript -->
+<script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper-min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Animate On Scroll Javascript -->
+<script src="{% static 'animate_on_scroll/js/aos.js' %}"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>

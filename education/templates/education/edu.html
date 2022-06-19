@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block corecss %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'education/css/edu_styles.css' %}">
+{% endblock corecss %}
+
+
+{% block content %}
+
+<header>
+  <div class="heading">
+    <h1>Education :</h1>
+    <hr>
+  </div>
+</header>
+
+<section>
+  <div class="edu-container">
+
+    <table>
+
+      <tr>
+        <th class="corner-tl"><i class="fa fa-graduation-cap"></i><br>Degree/Standard</th>
+        <th><i class="fa fa-building-columns"></i><br>Institution</th>
+        <th><i class="fa fa-star"></i><br>Grade</th>
+        <th class="corner-tr"><i class="fa fa-calendar-days"></i><br>Year</th>
+      </tr>
+
+      <tr>
+        <td>B.Tech ECE</td>
+        <td>Jalpaiguri Government Engineering College</td>
+        <td>YGPA 8.76</td>
+        <td>Till 5<span>th</span> semester</td>
+      </tr>
+
+      <tr>
+        <td>Senior Secondary</td>
+        <td>Burnpur Riverside School, Chittaranjan (CBSE)</td>
+        <td>94.2%</td>
+        <td>2019</td>
+      </tr>
+
+      <tr>
+        <td class="corner-bl">Secondary (High School)</td>
+        <td>Burnpur Riverside School, Chittaranjan (CBSE)</td>
+        <td>CGPA 10</td>
+        <td class="corner-br">2017</td>
+      </tr>
+
+    </table>
+
+  </div>
+</section>
+
+{% endblock content %}
