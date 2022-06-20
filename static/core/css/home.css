@@ -1,0 +1,50 @@
+/* ID Selectors */
+body{
+  font-family: "Montserrat","cursive";
+}
+
+/* Class Selectors */
+.container-fluid{
+  min-height: 100vh;
+}
+
+.emph{
+  font-weight: bold;
+}
+
+.profile-pic{
+  text-align: center;
+  margin-top: 50px;
+}
+
+img.groove {
+  color: #fff;
+  text-align: center;
+  border-width: 20px;
+  border-style: groove;
+  border-color: silver;
+  border-radius: 50%;
+
+  box-shadow: 0 0 20px 7px #fff;
+}
+
+.intro-description{
+  color: #fff;
+  margin: 40px 60px;
+}
+
+.intro-description > h1{
+  font-family: "Sansita Swashed","fantasy";
+}
+
+.intro-description > p{
+  font-size: 0.9rem;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 50px;
+  line-height: 1.55rem;
+}
+
+.intro-description > p:first-of-type{
+  text-indent: 70px;
+}
