@@ -30,7 +30,7 @@ img.groove {
 
 .intro-description{
   color: #fff;
-  margin: 40px 60px;
+  margin: 40px 50px;
 }
 
 .intro-description > h1{
@@ -47,4 +47,47 @@ img.groove {
 
 .intro-description > p:first-of-type{
   text-indent: 70px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+
+  .intro-description{
+    color: #fff;
+    margin: 40px 25px;
+  }
+
+  .intro-description > p{
+    font-size: 0.9rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 40px;
+    line-height: 1.55rem;
+  }
+
+  .intro-description > p:first-of-type{
+    text-indent: 60px;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+
+  .intro-description{
+    color: #fff;
+    margin: 40px 15px;
+  }
+
+  .intro-description > p{
+    font-size: 0.9rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 30px;
+    line-height: 1.55rem;
+  }
+
+  .intro-description > p:first-of-type{
+    text-indent: 60px;
+  }
+
 }
